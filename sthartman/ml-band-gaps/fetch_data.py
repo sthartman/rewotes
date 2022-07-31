@@ -10,9 +10,9 @@ import os
 
 if __name__ == "__main__":
     with MPRester(api_key="5Lcv7aW3A4tCxFzUZYDrT3egCiavfrgM") as mpr:
-        dir_name = os.getcwd() + '\\mp_sample_data_2\\'
+        dir_name = os.getcwd() + '\\mp_sample_data\\'
         data = mpr.summary.search(energy_above_hull=(0,0), 
-                                  num_elements=(2,2),
+                                  num_elements=(1,1),
                                   fields=['structure', 'composition',
                                           'symmetry', 'band_gap',
                                           'total_magnetization_normalized_vol'])
